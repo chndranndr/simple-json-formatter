@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="#" class="logo">JSON Formatter</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Text Formatter</h1>
+        
+        <div class="format-toggle">
+            <button class="toggle-btn active" data-format="json">JSON</button>
+            <button class="toggle-btn" data-format="html">HTML</button>
+        </div>
+        
+        <div class="editor-container">
+            <div class="editor-box input-box">
+                <textarea id="input" placeholder="Paste your JSON here..."></textarea>
+            </div>
+            <div class="editor-box output-box">
+                <div id="output" class="output-area"></div>
+                <div class="validation-indicator">JSON is valid!</div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button id="beautify">Beautify</button>
+            <button id="copy" class="secondary-button">Copy</button>
+        </div>
+        
+        <div id="error" class="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
