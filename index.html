@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Formatter</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <a href="#" class="logo">JSON Formatter</a>
+            <a href="#" class="logo">Text Formatter</a>
         </div>
     </header>
 
@@ -19,6 +20,9 @@
         <div class="format-toggle">
             <button class="toggle-btn active" data-format="json">JSON</button>
             <button class="toggle-btn" data-format="html">HTML</button>
+            <button class="toggle-btn" data-format="yaml">YAML</button>
+            <button class="toggle-btn" data-format="java">Java</button>
+            <button class="toggle-btn" data-format="freemarker">FreeMarker</button>
         </div>
         
         <div class="editor-container">
